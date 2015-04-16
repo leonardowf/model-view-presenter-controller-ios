@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "blep-cats/Presenter/Presenter.swift"
+            timestampString = "450838316.465663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "init(coder:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "blep-cats/Presenter/Presenter.swift"
+            timestampString = "450839428.157012"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3"
+            endingLineNumber = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "blep_cats.Presenter.init (blep_cats.Presenter.Type)(image : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIImage&gt;) -&gt; blep_cats.Presenter"
+                  moduleName = "blep-cats"
+                  urlString = "file:///Users/leonardowistuba/git/blep-cats/blep-cats/Presenter/Presenter.swift"
+                  timestampString = "450840073.621187"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "blep_cats.Presenter.init (blep_cats.Presenter.Type)(frame : C.CGRect) -&gt; blep_cats.Presenter"
+                  moduleName = "blep-cats"
+                  urlString = "file:///Users/leonardowistuba/git/blep-cats/blep-cats/Presenter/Presenter.swift"
+                  timestampString = "450840073.621681"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "blep_cats.Presenter.init (blep_cats.Presenter.Type)() -&gt; blep_cats.Presenter"
+                  moduleName = "blep-cats"
+                  urlString = "file:///Users/leonardowistuba/git/blep-cats/blep-cats/Presenter/Presenter.swift"
+                  timestampString = "450840073.621887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xsb-Qo-QbU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Cats List Controller-->
+        <scene sceneID="J2h-kC-R9i">
+            <objects>
+                <viewController id="ERL-XX-ArI" customClass="CatsListController" customModule="blep_cats" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEY-sJ-qWK"/>
+                        <viewControllerLayoutGuide type="bottom" id="ADu-wI-iXd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N9G-hU-SSo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="138" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="9rk-Zp-nec">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="presenterCell" rowHeight="138" id="32W-sx-ZXs" customClass="PresenterCell" customModule="blep_cats" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="32W-sx-ZXs" id="Hn7-ZU-qCT">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6j0-yd-UXu" userLabel="Presenter" customClass="CatPresenter" customModule="blep_cats" customModuleProvider="target">
+                                                    <connections>
+                                                        <outlet property="labelCatName" destination="Kdl-Z7-ihU" id="j85-41-2Q3"/>
+                                                    </connections>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-Z7-ihU">
+                                                    <rect key="frame" x="279" y="58.5" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="Kdl-Z7-ihU" secondAttribute="centerX" id="4tf-GU-sar"/>
+                                                <constraint firstAttribute="centerY" secondItem="Kdl-Z7-ihU" secondAttribute="centerY" id="Yhm-zN-fpm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="presenter" destination="6j0-yd-UXu" id="EPp-7B-gKA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9rk-Zp-nec" firstAttribute="top" secondItem="UEY-sJ-qWK" secondAttribute="bottom" constant="-40" id="Pds-Oj-hYk"/>
+                            <constraint firstItem="9rk-Zp-nec" firstAttribute="top" secondItem="N9G-hU-SSo" secondAttribute="top" id="aq4-Tg-L9k"/>
+                            <constraint firstItem="9rk-Zp-nec" firstAttribute="leading" secondItem="N9G-hU-SSo" secondAttribute="leading" id="dES-0f-Ryp"/>
+                            <constraint firstItem="9rk-Zp-nec" firstAttribute="bottom" secondItem="ADu-wI-iXd" secondAttribute="top" id="hwX-Ok-5GP"/>
+                            <constraint firstAttribute="trailing" secondItem="9rk-Zp-nec" secondAttribute="trailing" id="noq-eZ-Mvl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Pds-Oj-hYk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="P1O-W4-47G"/>
+                    <connections>
+                        <outlet property="tableView" destination="9rk-Zp-nec" id="q2H-bM-Wy4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwk-cc-KEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="140"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="80y-g0-X2P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xsb-Qo-QbU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XIM-sF-fW6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ERL-XX-ArI" kind="relationship" relationship="rootViewController" id="MEw-iL-etp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lrn-LW-Ct7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="140"/>
+        </scene>
+    </scenes>
+</document>
